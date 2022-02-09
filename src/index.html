@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jsLogic2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="input">
+        <form>
+          <table>
+            <tr>
+              <td><label for="pid">Product ID</label></td>
+              <td><input autocomplete="off" name="pid" id="pid" type="text" /></td>
+            </tr>
+            <tr>
+              <td><label for="pname">Product Name</label></td>
+              <td><input autocomplete="off" name="pname" id="pname" type="text" /></td>
+            </tr>
+            <tr>
+              <td><label for="pprice">Product Price</label></td>
+              <td><input autocomplete="off" name="pprice" id="pprice" type="number" /></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" id="add_button" value="Add product" onclick="press()"/>
+                <input type="button" id="update_button" value="Update product" onclick="update()" hidden/>
+              </td>
+              <td></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div id="output">
+        <table id="out_table">
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
